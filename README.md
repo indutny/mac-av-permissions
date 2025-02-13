@@ -2,6 +2,8 @@
 
 [![npm](https://img.shields.io/npm/v/@indutny/mac-av-permissions)](https://www.npmjs.com/package/@indutny/mac-av-permissions)
 
+**You should probably use [node-mac-permissions](https://github.com/codebytere/node-mac-permissions) instead**
+
 Bindings for macOS AVFoundation API for querying Microphone/Camera permissions.
 
 ## Installation
