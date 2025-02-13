@@ -1,0 +1,41 @@
+{
+  "name": "@indutny/mac-av-permissions",
+  "description": "Wrapper around authorizationStatusForMediaType API for macOS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "keywords": [
+    "AVFoundation",
+    "macos",
+    "authorizationStatusForMediaType",
+    "authorization",
+    "media"
+  ],
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "binding.gyp",
+    "addon.mm",
+    "README.md"
+  ],
+  "author": "Fedor Indutny <238531+indutny@users.noreply.github.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/indutny/mac-av-permissions/issues"
+  },
+  "homepage": "https://github.com/indutny/mac-av-permissions#readme",
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "node-addon-api": "*"
+  },
+  "scripts": {
+    "format": "npm run format:js && npm run format:c",
+    "format:js": "prettier --cache --write .",
+    "format:c": "xcrun clang-format --style=chromium -Werror --verbose -i *.mm",
+    "test": "mocha test/*-test.js"
+  },
+  "devDependencies": {
+    "mocha": "^11.1.0",
+    "prettier": "^3.3.3"
+  }
+}
